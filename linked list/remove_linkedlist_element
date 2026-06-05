@@ -1,0 +1,80 @@
+#include <iostream>
+
+using namespace std;
+
+class ListNode {
+public:
+    int val;
+    ListNode* next;
+
+    ListNode(int x) {
+        val = x;
+        next = NULL;
+    }
+};
+
+class Solution {
+public:
+    ListNode* removeElements(ListNode* head, int val) {
+        ListNode* dummy = new ListNode(0);
+        dummy->next = head;
+
+        ListNode* curr = dummy;
+
+        while (curr->next != NULL) {
+            if (curr->next->val == val) {
+                curr->next = curr->next->next;
+            } else {
+                curr = curr->next;
+            }
+        }
+
+        return dummy->next;
+    }
+};
+
+// Function to print linked list
+void printList(ListNode* head) {
+    while (head != NULL) {
+        cout << head->val << " ";
+        head = head->next;
+    }
+    cout << endl;
+}
+
+int main() {
+    int n;
+
+    cout << "Enter number of nodes: ";
+    cin >> n;
+
+    if (n == 0) {
+        cout << "List is empty." << endl;
+        return 0;
+    }
+
+    int data;
+    cout << "Enter node values: ";
+
+    cin >> data;
+    ListNode* head = new ListNode(data);
+    ListNode* temp = head;
+
+    for (int i = 1; i < n; i++) {
+        cin >> data;
+        temp->next = new ListNode(data);
+        temp = temp->next;
+    }
+
+    int val;
+    cout << "Enter value to remove: ";
+    cin >> val;
+
+    Solution obj;
+    head = obj.removeElements(head, val);
+
+    cout << "Updated Linked List: ";
+    printList(head);
+
+    return 0;
+}
