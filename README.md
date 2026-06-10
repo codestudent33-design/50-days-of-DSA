@@ -13,35 +13,39 @@
 - LeetCode
 - Codeforces
 
-Problem 1: Two Sum
 
-Approach:
+## Successfully completed 6 days of consistent DSA practice with problems focused on Arrays, Strings, Linked Lists, Two Pointers, Binary Search, and Dynamic Programming.
 
-Used a hash map to store previously seen numbers and their indices.
-For each element, calculated the complement (target - current number).
-If the complement was already present in the hash map, returned the indices immediately.
+## Problems Solved
 
-Complexity:
+* Two Sum II
+* 3Sum
+* Count Anagrams
+* Remove Linked List Elements
+* Binary Search
+* Maximum Subarray (Kadane’s Algorithm)
 
-⏱️ Time Complexity: O(n)
-💾 Space Complexity: O(n)
+## Key Concepts Learned
 
-Key Learning:
+* Two Pointer Technique
+* Binary Search
+* Linked List Manipulation
+* Kadane’s Algorithm
+* Sorting + Duplicate Handling
+* Modular Arithmetic
+* Combinatorics
+* Fast Exponentiation
+* Frequency Counting
 
-Learned how hash maps can reduce the time complexity from O(n²) to O(n).
-Problem 2: Remove Linked List Elements
+## Biggest Learnings
 
-Approach:
+* Consistency matters more than solving many problems at once
+* Optimized approaches can drastically reduce time complexity
+* Understanding patterns is more important than memorizing solutions
+* Debugging teaches as much as solving
 
-Traversed the linked list and removed nodes whose value matched the given target.
-Handled cases where the head node itself needed to be removed.
-Updated pointers carefully to maintain the linked list structure.
+## Current Focus
 
-Complexity:
+ looking for the problems in coming days and hoping to give an optimal solution.Improving problem-solving skills, building strong DSA fundamentals, and learning in public through daily consistency.
 
-⏱️ Time Complexity: O(n)
-💾 Space Complexity: O(1)
-
-Key Learning:
-
-Improved understanding of linked list traversal, node deletion, and handling edge cases involving the head node.
+#DSA #CPP #CompetitiveProgramming #LearnInPublic #CodingJourney
